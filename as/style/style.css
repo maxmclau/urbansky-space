@@ -1,0 +1,126 @@
+@import url("reset.css");
+@import url("https://use.typekit.net/gcf4qzs.css");
+
+::selection {
+	color: #000000;
+	background-color: #ffff00;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	color: #fff;
+	background-color: #000000;
+	font-family: neue-haas-grotesk-display, sans-serif;
+}
+
+canvas {
+	position: fixed;
+	visibility: hidden;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: -1;
+}
+
+#hero {
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	top: 10vh;
+	left: 10vh;
+	width: 420px;
+}
+
+#hero .copy h3 {
+	font-family: neue-haas-grotesk-display, sans-serif;
+	font-size: 1.4em;
+	line-height: 1.5em;
+	font-weight: bold;
+	letter-spacing: -0.015em;
+}
+
+#hero .copy p {
+	margin: 1.2em 0;
+	font-size: 0.8em;
+	line-height: 1.3em;
+	font-weight: lighter;
+}
+
+#hero .form {
+	position: relative;
+	display: flex;
+}
+
+#hero .form input {
+	display: block;
+	-webkit-appearance: none;
+	box-sizing: border-box;
+	height: 2rem;
+	border: 1px solid #fff;
+	margin: 0;
+}
+
+#hero .form input[type=email] {
+	width: 12rem;
+	padding: 0 0.6em;
+	border-radius: 3px 0 0 3px;
+}
+
+.form input[type=submit] {
+	background: #000000;
+	color: #ffffff;
+	border-left: none;
+	font-weight: 600;
+	font-size: 0.8em;
+	padding: 0 0.8rem;
+	border-radius: 0 3px 3px 0;
+	cursor: pointer;
+	-webkit-transition: all 200ms ease;
+					transition: all 200ms ease;
+}
+
+.form input[type=submit]:hover {
+	color: #000000;
+	background: #ffffff;
+}
+
+footer {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	box-sizing: border-box;
+	width: 100%;
+	bottom: 0;
+	padding: 3em;
+	font-size: 0.5em;
+	font-weight: lighter;
+}
+
+footer span {
+	padding: 0.8em;
+	background-color: #000000;
+	border-radius: 0.5em;
+	-webkit-transition: color 200ms ease;
+					transition: color 200ms ease;
+}
+
+footer span.light {
+	color: #7d7d7d;
+}
+
+footer span.light:hover {
+	color: #ffffff;
+}
+
+footer span a {
+	color: #ffffff;
+}
+
+footer span a:hover {
+	color: #0000ff;
+}
